@@ -1,3 +1,5 @@
+@import '../../styles/scss/variables';
+
 .content {
     display: flex;
     justify-content: center;
@@ -12,12 +14,16 @@
       text-align: center;
     
       h1 {
-        color: #50ae6e;
+        color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing;
+        
+        span { color: $secundary-color; } 
       }
     
       p {
         margin-top: 50px;
-        color: #757575;
+        color: $text-grey;
       }
     
       h4 {
@@ -26,8 +32,8 @@
       }
     
       input {
-        background-color: #0b0a0d;
-        border: 1px solid #757575;
+        background-color: $input-color;
+        border: 1px solid $text-grey;
         opacity: .5;
         margin: 0 auto 20px;
         width: 80%;
@@ -35,16 +41,16 @@
       }
     
       input:focus, select:focus {
-        border-color: #50ae6e!important;
-        background-color: #0b0a0d;
+        border-color: $primary-color!important;
+        background-color: $input-color;
         opacity: .5;
         outline: 0;
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
       }
     
-      .btn-green {
-        background-color: #50ae6e;
+      .btn-default {
+        background-color: $primary-color;
         color: #FFF;
         width: 80%;
         margin: 0 auto 20px;
@@ -52,11 +58,12 @@
         transition: all 0.5s;
       }
      
-    
-      .btn-green:hover {
+      .btn-default:hover {
         background-color: #2d7945;
         color: #FFF;
       }
+      .btn--purple { background-color: $secundary-color; }
+      .btn--purple:hover { background-color: rgb(62, 50, 100); }
     
       .forgot__password {
         display: block;
@@ -64,7 +71,7 @@
         margin-top: 20px;
         background-color: transparent;
         border-color: transparent;
-        color: #757575;
+        color: $text-grey;
       }
     }
   }

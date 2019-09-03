@@ -1,0 +1,30 @@
+@import '../../styles/scss/variables';
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-color: $text-grey;
+
+    .logo {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: $letter-spacing;
+        color: $primary-color;
+
+        span { color: $secundary-color; }
+    }
+
+    nav li {
+        list-style: none;
+        display: inline-block;
+        letter-spacing: $letter-spacing;
+        margin-top: 5px;
+        margin-left: 25px;
+
+        a { color: $text-grey; }
+        a:hover { color: $white;  }
+    }
+}
