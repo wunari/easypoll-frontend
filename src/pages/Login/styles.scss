@@ -43,7 +43,7 @@
         box-shadow: none !important;
       }
     
-      button {
+      .btn-green {
         background-color: #50ae6e;
         color: #FFF;
         width: 80%;
@@ -51,15 +51,19 @@
         padding: 15px;
         transition: all 0.5s;
       }
+     
     
-      button:hover {
+      .btn-green:hover {
         background-color: #2d7945;
         color: #FFF;
       }
     
-      a {
+      .forgot__password {
         display: block;
+        margin: 0 auto;
         margin-top: 20px;
+        background-color: transparent;
+        border-color: transparent;
         color: #757575;
       }
     }
