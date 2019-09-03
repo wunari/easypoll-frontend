@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
 const Login = () => (
-    <body>
-        <div className="content">
+    <div class="content">
+        <div className="content__container">
             <h1>Wunari</h1>
             <p>Crie da maneira mais simples possível suas enquetes em menos de 1 minuto. Use em seu trabalho, em sua escola, em
             uma palestra ou até mesmo para surpreender seu público.</p>
-            <button class="btn btn-block" type="submit">Criar Poll</button>
+            <Link to="/main"><button class="btn btn-block" type="submit">Criar Poll</button></Link>
             <h4>Acessar EasyPoll</h4>
             <br/>
             <form action="">
@@ -18,7 +19,7 @@ const Login = () => (
             </form>
             <a href="#">Esqueci minha senha</a>
         </div>
-    </body>
+    </div>
 );
 
 export default Login;
