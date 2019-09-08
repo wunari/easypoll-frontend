@@ -90,16 +90,22 @@ footer {
   }
 }
 
+// RESPONSIVIDADE - MEDIA QUERYS
+
 @media only screen and (max-width: 425px) {
   .container-main {
     padding: 20px;
+
+    .container-options {
+      display: block;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
   }
 
-  .container-options {
-    display: block!important;
-  }
-
-  button {
-    margin-top: 10px!important;
+  footer {
+    padding: 15px;
   }
 }
