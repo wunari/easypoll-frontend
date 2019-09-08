@@ -1,0 +1,105 @@
+@import '../../styles/scss/variables';
+
+.container-main {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+
+  h4 {
+    color: $primary-color;
+    letter-spacing: $letter-spacing-less;
+
+    span { color: $secundary-color; }
+  }
+
+  label { color: $secundary-color; }
+
+  input {
+    display: block;
+    background-color: $input-grey;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+  }
+  .big-input { padding: 20px; }
+  .small-input { padding: 10px 20px; }
+  input::placeholder { color: #000; }
+
+  .mg-top {
+    margin-top: 20px;
+  }
+
+  .container-options {
+    display: flex;
+    justify-content: space-between;
+
+    .options {
+      padding-top: 20px;
+      color: $primary-color;
+    }
+  }
+
+  button {
+    margin-top: 40px;
+    border: none;
+    height: 50px;
+    width: 200px;
+    color: #E4E0EE;
+    transition: all .5s;
+  }
+
+  .btn-add {
+    background-color: #565068;
+  }
+  .btn-add:hover {
+    background-color: $secundary-color-hover;
+  }
+  .btn-create {
+    font-size: 18px;
+    background-color: #50AE6E;
+  }
+  .btn-create:hover {
+    background-color: $primary-color-hover;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #1C1A1A;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+
+  .wunari {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+
+  span {
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #CFE6D6;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container-main {
+    padding: 20px;
+  }
+
+  .container-options {
+    display: block!important;
+  }
+
+  button {
+    margin-top: 10px!important;
+  }
+}

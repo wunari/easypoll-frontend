@@ -32,7 +32,7 @@
       }
     
       input {
-        background-color: $input-color;
+        background-color: $input-black;
         border: 1px solid $text-grey;
         opacity: .5;
         margin: 0 auto 20px;
@@ -42,7 +42,7 @@
     
       input:focus, select:focus {
         border-color: $primary-color!important;
-        background-color: $input-color;
+        background-color: $input-black;
         opacity: .5;
         outline: 0;
         -webkit-box-shadow: none !important;
@@ -59,11 +59,11 @@
       }
      
       .btn-default:hover {
-        background-color: #2d7945;
+        background-color: $primary-color-hover;
         color: #FFF;
       }
       .btn--purple { background-color: $secundary-color; }
-      .btn--purple:hover { background-color: rgb(62, 50, 100); }
+      .btn--purple:hover { background-color: $secundary-color-hover; }
     
       .forgot__password {
         display: block;
