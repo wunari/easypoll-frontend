@@ -26,6 +26,13 @@
     width: 100%;
     max-width: 500px;
   }
+  input:focus, select:focus {
+    border: 1px solid $primary-color;
+    opacity: .5;
+    outline: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
   .big-input { padding: 20px; }
   .small-input { padding: 10px 20px; }
   input::placeholder { color: #000; }
@@ -45,7 +52,6 @@
   }
 
   button {
-    margin-top: 40px;
     border: none;
     height: 50px;
     width: 200px;
@@ -54,6 +60,7 @@
   }
 
   .btn-add {
+    margin-top: 20px;
     background-color: #565068;
   }
   .btn-add:hover {
