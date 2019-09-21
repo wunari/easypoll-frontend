@@ -1,6 +1,6 @@
 @import '../../styles/scss/variables';
 
-.container-main {
+.container {
   position: absolute;
   width: 100%;
   max-width: 500px;
@@ -75,32 +75,10 @@
   }
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  background-color: #1C1A1A;
-  text-align: center;
-  padding: 30px;
-  width: 100%;
-
-  .wunari {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: $primary-color;
-  }
-
-  span {
-    display: block;
-    margin-top: 20px;
-    font-size: 13px;
-    color: #CFE6D6;
-  }
-}
-
 // RESPONSIVIDADE - MEDIA QUERYS
 
 @media only screen and (max-width: 425px) {
-  .container-main {
+  .container {
     padding: 20px;
 
     .container-options {

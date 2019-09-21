@@ -1,0 +1,75 @@
+@import '../../styles/scss/variables';
+
+.container {
+
+  h2 {
+    letter-spacing: $letter-spacing-less;
+    color: $primary-color;
+  }
+
+  span {
+    color: $secundary-color;
+  }
+
+  .answer {
+    padding: 20px;
+    background-color: $input-grey; 
+    border-radius: 3px; 
+
+    label { 
+      color: #000; 
+      font-size: 18px;
+      letter-spacing: $letter-spacing-less;
+    }
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+    
+    input + label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 40px;
+    }
+  
+    input[type=radio] + label::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      
+      border-radius: 50%;
+      border: solid 1px $primary-color;
+      vertical-align: bottom;
+    }
+    
+    input[type=radio]:checked + label::after {
+      content: '';
+      background-color: $primary-color;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      position: absolute;
+      left: 1px;
+      bottom: 1px;
+    }
+  }
+  
+  button.button-center { 
+    transform: translateX(125px) translateY(40px);
+  }
+}
+
+//MEDIA QUERYS //@at-root
+
+@media (max-width: 425px) {
+  .container {
+    button.button-center {
+      transform: translateX(92px) translateY(40px);
+    }
+  }
+}

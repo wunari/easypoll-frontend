@@ -1,15 +1,17 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 export default class Main extends Component {
     render() {
         return (
             <div class="main">
                 <Header />
-                <div class="container-main">
+                <div class="container">
                     <h4>Create a <span>Poll</span></h4>
                     <label class="mg-top">Poll question</label>
                     <input class="big-input" type="text" placeholder="Type your question here..."/>
@@ -29,12 +31,9 @@ export default class Main extends Component {
                         </div>
                     </div>
 
-                    <button class="btn-create">Create your poll</button>
+                    <Link to="/vote"><button class="btn-create">Create your poll</button></Link>
                 </div>
-                <footer>
-                    <div className="wunari">Wunari</div>
-                    <span>Todos os direitos reservados</span>
-                </footer>
+                <Footer />
             </div>
         );
     }
