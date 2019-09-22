@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './styles.scss';
 
 import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export default class Main extends Component {
     render() {
@@ -33,7 +32,6 @@ export default class Main extends Component {
 
                     <Link to="/vote"><button class="btn-create">Create your poll</button></Link>
                 </div>
-                <Footer />
             </div>
         );
     }

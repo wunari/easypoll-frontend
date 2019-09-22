@@ -1,15 +1,17 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
 import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 export default class Vote extends Component {
   render() {
     return (
       <div className="vote">
+
         <Header />
+
         <div className="container">
           <h2>Qual sua banda favorita ?</h2>
           <span>Asked by Wuzi 24 minutes ago</span>
@@ -29,11 +31,10 @@ export default class Vote extends Component {
             <label for="radio3">Jhon Mayer</label>
           </div>
 
-          <button class="btn-create button-center">Submit your vote</button>
+          <Link to="/result"><button class="btn-create button-center">Submit your vote</button></Link>
         </div>
 
-        <Footer />
       </div>
-    )  
+    )
   }
 }

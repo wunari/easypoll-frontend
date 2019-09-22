@@ -1,0 +1,151 @@
+@import '../../styles/scss/variables';
+
+.result {
+  height: 73.5vh;
+}
+.container-result {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80%;
+  margin: 30px auto;
+
+  .result {
+    width: 50%;
+    h2 {
+      letter-spacing: $letter-spacing-less;
+      color: $primary-color;
+    }
+  
+    span {
+      color: $secundary-color;
+    }
+
+    .answer {
+      margin-top: 40px;
+      background-color: $input-grey;
+      height: 150px;
+      border-radius: 5px;
+      border: 5px solid $secundary-color;
+    }
+
+    .skew {
+      transform: skew(-10deg);
+    }
+
+    .disabled {
+      border: none!important;
+      opacity: .3;
+    }
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 15px;
+
+      span {
+        font-size: 20px;
+        color: #000;
+      }
+    }
+
+    .progress-bar {
+      margin: 20px auto;
+      height: 8px;
+      width: 90%;
+      border-radius: 3px;
+      background-color: $primary-color;
+    }
+
+    .result__votes {
+      color: #000;
+      margin-left: 17px;
+    }
+  }
+
+  .vote { 
+
+    &__poll {
+      width: 100%;
+      padding: 30px;
+      background-color: #C7DDE8;
+    }
+
+    &__share {
+      margin-top: 30px;
+      background-color: $input-grey;
+      height: 450px;
+
+      .information {
+        margin: 30px 30px;
+        width: 100px;
+        font-size: 20px;
+        color: #000;
+
+        .number {
+          font-weight: bold;
+          font-size: 40px;
+        }
+
+        .share {
+          font-weight: bold;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  color: $primary-color; 
+  padding: 30px;
+  text-align: center;
+  background-color: #1C1A1A;
+
+  p {
+    font-size: 20px;
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+
+  small {
+    color: #CFE6D6;
+  }
+}
+
+//MEDIA QUERYS //@at-root
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .container-result {
+    display: unset;
+    width: 100%;
+    max-width: 500px;
+    
+
+    .result {
+      width: 70%;
+      margin: 40px auto;
+
+      .answer {
+        margin-top: 30px;
+        height: 140px;
+      }
+    }
+
+    .vote {
+
+      &__poll {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      &__share {
+        width: 70%;
+        margin: 0 auto;
+        height: auto;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
